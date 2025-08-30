@@ -1,31 +1,37 @@
-International Debt Analysis Using SQL & Data Visualization
-Project Overview
+**International Debt Analysis Using SQL & Data Visualization**
+
+**Project Overview**
+
+
 This project analyzes international debt data collected by the World Bank, covering debt owed by developing countries across multiple categories from 1970 to 2015. The goal is to extract meaningful insights using SQL in PostgreSQL and answer key financial questions about debt.
 
-Steps for Loading Data into PostgreSQL
+**Steps for Loading Data into PostgreSQL**
+
 Follow these steps to load the CSV file into PostgreSQL:
 
-  Ensure PostgreSQL is installed and you have access to a client like DBeaver.
+1. Ensure PostgreSQL is installed and you have access to a client like DBeaver.
 
-  Download the CSV file from GitHub or your source.
+2. Download the CSV file from GitHub or your source.
 
-  Open DBeaver and connect to your PostgreSQL server.
+3. Open DBeaver and connect to your PostgreSQL server.
 
-  Create a new schema for the project:
+4. Create a new schema for the project:
     CREATE SCHEMA international_debt_analysis;
-  Set the search path to your new schema:
+
+5. Set the search path to your new schema:
    SET search_path TO international_debt_analysis;
-  Import the CSV file:
 
-    Navigate to your schema.
+6. Import the CSV file:
 
-    Right-click Tables under your schema and choose Import Data.
+7. Navigate to your schema.
 
-    Select the CSV as your source file.
+8. Right-click Tables under your schema and choose Import Data.
 
-    Map the columns to your table.
+10. Select the CSV as your source file.
 
-    Confirm and proceed.
+11. Map the columns to your table.
 
- Verify your table import by running:
+12. Confirm and proceed.
+
+13. Verify your table import by running:
  SELECT * FROM international_debt_analysis.international_debt;

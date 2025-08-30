@@ -16,10 +16,10 @@ Follow these steps to load the CSV file into PostgreSQL:
 3. Open DBeaver and connect to your PostgreSQL server.
 
 4. Create a new schema for the project:
-    CREATE SCHEMA international_debt_analysis;
+       CREATE SCHEMA international_debt_analysis;
 
 5. Set the search path to your new schema:
-   SET search_path TO international_debt_analysis;
+       SET search_path TO international_debt_analysis;
 
 6. Import the CSV file:
 

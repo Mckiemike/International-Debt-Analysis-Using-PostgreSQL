@@ -5,7 +5,7 @@
 
 This project analyzes international debt data collected by the World Bank, covering debt owed by developing countries across multiple categories from 1970 to 2015. The goal is to extract meaningful insights using SQL in PostgreSQL and answer key financial questions about debt.
 
-**Steps for Loading Data into PostgreSQL**
+## Steps for Loading Data into PostgreSQL
 
 Follow these steps to load the CSV file into PostgreSQL:
 
@@ -16,7 +16,7 @@ Follow these steps to load the CSV file into PostgreSQL:
 3. Open DBeaver and connect to your PostgreSQL server.
 
 4. Create a new schema for the project:
-       CREATE SCHEMA international_debt_analysis;
+       ```CREATE SCHEMA international_debt_analysis;```
 
 5. Set the search path to your new schema:
        ```SET search_path TO international_debt_analysis;```
